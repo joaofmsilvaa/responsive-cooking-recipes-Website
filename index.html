@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>My Website</title>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>TasteMasters</h1>
+            <p>Where flavor meets expertise</p>
+            <a href="" class="hero-btn">Know more</a>
+        </div>
+
+    </section>
+    
+
+    <section class="recipeCategorys">
+        <h1>Recipe categories</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, amet provident repellat.</p>
+
+        <div class="row">
+            <div class="recipe-category">
+                <h3>Meat recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+            <div class="recipe-category">
+                <h3>Fish recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+            <div class="recipe-category">
+                <h3>Vegan recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+    </section>
+
+    <!-- JavaScript to toggle the menu -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
