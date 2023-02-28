@@ -1,8 +1,5 @@
 # responsive-cooking-recipes-Website
-A project of a responsive cooking website that uses HTML,CSS and a bit of JavaScript
-PROJECT TITLE: Cooking recipes website
-PROJECT GOAL: Make a full responsive website
-VERSION OR DATE: 28/02/2023
+
 <p>A project of a responsive cooking website that uses HTML,CSS and a bit of JavaScript<br>
 PROJECT TITLE: Cooking recipes website<br>
 PROJECT GOAL: Make a full responsive website<br>
