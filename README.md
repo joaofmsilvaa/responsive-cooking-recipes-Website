@@ -1,4 +1,4 @@
-# responsive-cooking-recipes-Website
+# Responsive-Cooking-Recipes-Website
 
 <p>A project of a responsive cooking website that uses HTML,CSS and a bit of JavaScript<br>
 PROJECT TITLE: Cooking recipes website<br>
