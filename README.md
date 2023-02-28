@@ -4,6 +4,6 @@ PROJECT TITLE: Cooking recipes website
 PROJECT GOAL: Make a full responsive website
 VERSION OR DATE: 28/02/2023
   
-Created by: https://github.com/JOao7640
+Created by: <a href="https://github.com/JOao7640">JOao7640</a>
 Ps: All the images were created in <a href="https://app.logo.com/">logo.com</a> so fill free to use it
 
