@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,65 +15,49 @@
 </head>
 <body>
 
-    <section class="header">
+    <section class="header" id = "home">
         <nav>
-            <a href="index.html"><img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png"></a>
+            <img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png" alt="tasteMastersLogo">
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Recipe Categorys</a></li>
-                    <li><a href="">Reviews</a></li>
+                    <li><a onclick="scroll()" href = "#home">HOME</a></li>
+                    <li><a onclick="scroll()" href = "#recCategories">Recipe Categoriess</a></li>
+                    <li><a onclick="scroll()" href = "#reviews">Reviews</a></li>
+                    <li><a onclick="scroll()" href = "#contactUS">Contact Us</a></li>
                 </ul>
             </div>
-            <i class=" fa fa-solid fa-bars" onclick="showMenu()"></i>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
             <h1>TasteMasters</h1>
             <p>Where flavor meets expertise</p>
-            <a href="" class="hero-btn">Know more</a>
+            <a href="" class="hero-btn">Let's Cook!</a>
         </div>
 
     </section>
     
-    <!--  About us -->
-    <section class="about-us">
-        <h1>About us</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
-        <div class="row">
-            <div class="aboutUs">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis earum vel iusto unde a.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis earum vel iusto unde a.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis earum vel iusto unde a.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis earum vel iusto unde a.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis earum vel iusto unde a.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipeCategorys">
-        <h1>Recipe categories</h1>
+    <section class="recipeCategories" id = "recCategories" >
+        <h2>Recipe categories</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, amet provident repellat.</p>
 
         <div class="row">
             <div class="recipe-category">
-                <img src="images/steak_image.jpg">
+                <img src="images/steak_image.jpg" alt="steakImage">
                 <h3>Meat Recipes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
                 dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
             </div>
             <div class="recipe-category">
-                <img src="images/fish_image.jpg">
+                <img src="images/fish_image.jpg" alt="fishImage">
                 <h3>Fish Recipes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
                 dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
             </div>
             <div class="recipe-category">
-                <img src="images/vegan_image.jpg">
+                <img src="images/vegan_image.jpg" alt="veganImage">
                 <h3>Vegan Recipes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
                 dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
@@ -81,13 +66,13 @@
 
     <!-- Reviews -->
 
-    <section class="reviews">
-        <h1>Some of our reviews</h1>
+    <section class="reviews" id="reviews">
+        <h2>Some of our reviews</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
         <div class="row">
             <div class="review-col">
-                <img src="images/user.jpg">
+                <img src="images/user.jpg" alt="user1">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique aut vero, beatae fugiat dolores accusamus deserunt  quod consectetur aperiam atque impedit quas eos alias officia sapiente. </p>
                     <h3>Noé Mathieu</h3>
@@ -99,7 +84,7 @@
                 </div>
             </div>
             <div class="review-col">
-                <img src="images/user.jpg">
+                <img src="images/user.jpg" alt="user2">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique aut vero, beatae fugiat dolores accusamus deserunt quod consectetur aperiam atque impedit quas eos alias officia sapiente.  </p>
                     <h3>Rahel Karolina</h3>
@@ -113,35 +98,55 @@
         </div>
     </section>
 
-    <!--  Contacts -->
+    <!-- Contacts -->
 
-    <section class="contacts">
-        <nav>
-            <div class="nav-links">
-                <ul>
-                    
-                </ul>
-            </div>
-        </nav>
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p class="e-mail">example@gmail.com</p>
 
-        <div class="text-box">
-            <h1>TasteMasters</h1>
-            <p>Where flavor meets expertise</p>
-            <a href="" class="hero-btn">Know more</a>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate 
+            et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis
+            earum vel iusto unde a Lorem.</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
         </div>
-
+        <p>Copyright © TasteMasters 2023</p>
     </section>
 
     <script>
         let navLinks = document.getElementById("navLinks");
-
+        
         function showMenu(){
             navLinks.style.right = "0";
+            
         }
 
         function hideMenu(){
             navLinks.style.right = "-200px";
+    
         }
+
+        function scroll() {
+            
+            document.body.style.scrollBehavior = 'smooth';
+
+            const section = document.getElementById('my-section');
+  
+            window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+            });
+            
+            setTimeout(() => {
+                document.body.style.scrollBehavior = 'unset';
+            }, 1000);
+        }
+
+
     </script>
 
 </body>
