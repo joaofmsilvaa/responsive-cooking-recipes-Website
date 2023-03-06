@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipesStyles.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>My Website</title>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png" alt="tasteMastersLogo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "#trendingRecipes">Trending Recipes</a></li>
+                    <li><a href = "#recipes">Recipes</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+
+    <!-- Trending Recipes -->
+    <div class="trendingRecipe">
+        <img src="images/meal1.jpeg" alt="meal1">
+        <div class="trendingRecipe-content">
+          <div class="trendingRecipe-header">
+            <h3>Butter Chicken</h3>
+            <span class="trendingRecipe-date">5 hours ago</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod nisl ac massa gravida, vel malesuada nisi convallis.</p>
+          <p class="username"><b>Jose Andrews</b></p>
+            <i class=" fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-regular fa-star"></i>
+        </div>
+    </div>
+
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p class="e-mail">example@gmail.com</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate 
+            et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis
+            earum vel iusto unde a Lorem.</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteMasters 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+
+
+    </script>
+
+</body>
+</html>

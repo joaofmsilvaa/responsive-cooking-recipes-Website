@@ -21,10 +21,10 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a onclick="scroll()" href = "#home">HOME</a></li>
-                    <li><a onclick="scroll()" href = "#recCategories">Recipe Categoriess</a></li>
-                    <li><a onclick="scroll()" href = "#reviews">Reviews</a></li>
-                    <li><a onclick="scroll()" href = "#contactUS">Contact Us</a></li>
+                    <li><a href = "#home">HOME</a></li>
+                    <li><a href = "#recCategories">Recipe Categoriess</a></li>
+                    <li><a href = "#reviews">Reviews</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
                 </ul>
             </div>
             <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
@@ -33,7 +33,7 @@
         <div class="text-box">
             <h1>TasteMasters</h1>
             <p>Where flavor meets expertise</p>
-            <a href="" class="hero-btn">Let's Cook!</a>
+            <a href="recipes.html" class="hero-btn">Let's Cook!</a>
         </div>
 
     </section>
@@ -62,6 +62,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
                 dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
             </div>
+        </div>
     </section>
 
     <!-- Reviews -->
@@ -128,22 +129,6 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
     
-        }
-
-        function scroll() {
-            
-            document.body.style.scrollBehavior = 'smooth';
-
-            const section = document.getElementById('my-section');
-  
-            window.scrollTo({
-            top: section.offsetTop,
-            behavior: 'smooth'
-            });
-            
-            setTimeout(() => {
-                document.body.style.scrollBehavior = 'unset';
-            }, 1000);
         }
 
 
