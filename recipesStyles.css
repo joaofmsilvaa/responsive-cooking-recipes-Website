@@ -151,32 +151,42 @@ nav .fa{
 
 /* Trening recipes */
 
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between ;
+
+}
+
 .trendingRecipess{
     width: 80%;
     margin: auto;
-    margin-bottom: 20px;
+    text-align: center;
     padding-top: 100px;
-    text-align: left;
 }
 
 .trendingRecipes-col{
     flex-basis: 50%;
+    background-color: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
     text-align: left;
-    background-color: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
+    border: 2px solid transparent;
+
 }
 
 .trendingRecipes-col img{
-    height: 160px;
-    width: 190px;
-    margin-left: 10px;
-    margin-right: 60px;
-    border-radius: 25%;
-    border: 1px solid #333;
+    object-fit:contain;
+    width: 60%;
+    height: auto;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:  30px;
+    position: relative;
+    overflow: hidden;
 }
 
 .trendingRecipes-col p{
@@ -193,10 +203,26 @@ nav .fa{
     color: #f44336;
 }
 
+.trendingRecipes-col:hover{
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+
+
 @media (max-width:700px) {
     .trendingRecipes-col img{
-        margin-left: 0px;
-        margin-right: 15px;
+        width: 70%;
+        flex-basis: 16%;
+        border-radius: 10px;
+        margin-bottom:  15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .trendingRecipes-col{
+        width: 40%;
+        flex-basis: 40%;
     }
 }
 
