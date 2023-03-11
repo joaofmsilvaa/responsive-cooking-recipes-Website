@@ -20,6 +20,7 @@ nav{
     align-items: center;
     position: relative;
     background-color: #333;
+    
 }
 
 nav img{
@@ -29,6 +30,7 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    
 }
 
 .nav-links ul li{
@@ -269,7 +271,7 @@ nav .fa{
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
-    flex-basis: 44%;
+    flex-basis: 40%;
     align-content: center;
     border-radius: 12px;
     border: 2px solid transparent;
@@ -277,6 +279,9 @@ nav .fa{
 
 }
 
+.recipes .author{
+    font-size: 110%;
+}
 
 .recipes .fa{
     color: #f44336;
@@ -303,8 +308,12 @@ nav .fa{
 }
 
 @media (max-width:700) {
-    .recipes-col{
-        flex-basis: 40%;
+    .content{
+        font-size: 70%;
+    }
+
+    .content h3{
+        font-size: 50%;
     }
 }
 
