@@ -255,6 +255,11 @@ nav .fa{
 
 /* Recipes */
 
+.recipesSecName{
+    margin-top: 30px;
+    text-align: center;
+}
+
 .recipes .row{
     display: flex;
     flex-wrap: wrap;
